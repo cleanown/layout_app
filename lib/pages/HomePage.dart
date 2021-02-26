@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'controlTest/controlTest.dart';
 import 'drag/drag.dart';
 
 class HomePage extends StatefulWidget {
@@ -50,10 +51,7 @@ class _HomePageState extends State<HomePage> {
         child: PageView(
           controller: _pageController,
           children: [
-            Container(
-              color: Colors.orange,
-              child: Center(child: Text('1111')),
-            ),
+            ControlTest(),
             DragTest(),
             Container(
               color: Colors.blue,
