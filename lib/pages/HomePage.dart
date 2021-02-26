@@ -50,11 +50,11 @@ class _HomePageState extends State<HomePage> {
         child: PageView(
           controller: _pageController,
           children: [
-            DragTest(),
             Container(
               color: Colors.orange,
               child: Center(child: Text('1111')),
             ),
+            DragTest(),
             Container(
               color: Colors.blue,
               child: Center(child: Text('2222')),
